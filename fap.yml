@@ -1,0 +1,10 @@
+appid: hello_fap
+name: Hello FAP
+category: Tools
+version: 0.1.0
+entry: hello_fap_app
+icon: A_Plugins
+requires:
+  - gui
+  - input
+  - storage
