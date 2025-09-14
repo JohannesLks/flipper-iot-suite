@@ -1,5 +1,7 @@
 # Flipper IoT Suite
 
+![](./data/logo.png)
+
 IoT Discovery & Attack Simulation Toolkit for Flipper Zero
 
 The Flipper IoT Suite is an out-of-tree application (`.fap`) for Flipper Zero.  
