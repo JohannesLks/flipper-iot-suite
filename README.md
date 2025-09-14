@@ -82,4 +82,6 @@ The build script will:
 - Flipper Zero with SD card
 
 # resources
+
 https://cujo.com/blog/thread-support-for-flipper-zero-part-2-setup/
+https://cujo.com/blog/thread-support-for-flipper-zero-part-3-interfacing-thread-networks-and-data-sets/
