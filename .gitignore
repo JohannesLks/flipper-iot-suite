@@ -47,3 +47,7 @@ node_modules/
 # Backup files
 *.backup
 *.old
+
+# MkDocs documentation build
+site/
+.mkdocs_cache/
