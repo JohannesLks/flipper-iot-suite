@@ -55,3 +55,27 @@ Clone the repo:
 git clone https://github.com/johanneslks/flipper-iot-suite.git
 cd flipper-iot-suite
 ```
+
+Build the FAP file:
+
+```bash
+./build.sh
+```
+
+The build script will:
+1. Clone the Flipper Zero firmware repository
+2. Set up the ARM cross-compilation toolchain
+3. Compile the IoT Suite application
+4. Generate `iot_suite.fap` file
+
+**Installation:**
+1. Copy `iot_suite.fap` to your Flipper Zero SD card under `/ext/apps/Tools/`
+2. Launch the app from the Flipper Zero menu
+
+**Requirements:**
+- Docker (for cross-compilation)
+- Git (for firmware repository)
+- Flipper Zero with SD card
+
+# resources
+https://cujo.com/blog/thread-support-for-flipper-zero-part-2-setup/

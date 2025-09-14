@@ -1,1 +1,49 @@
-furi-sdk
+# Flipper SDK (cloned automatically)
+furi-sdk/
+_fw/
+
+# Build artifacts
+build/
+*.fap
+*.o
+*.elf
+*.bin
+*.hex
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.tmp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+*.out
+
+# Temporary files
+*.bak
+*.orig
+*.rej
+
+# Python cache (if using Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node modules (if using Node.js tools)
+node_modules/
+
+# Backup files
+*.backup
+*.old
