@@ -12,7 +12,7 @@ It allows security researchers and pentesters to discover, analyze, and interact
 - Discovery
   - BLE device scanning (addresses, RSSI, services, manufacturer data)
   - Sub-GHz probe (433/868 MHz signal detection & fingerprinting)
-  - Optional Zigbee discovery via USB dongle (CC2652/CC2531)
+  - Optional Zigbee discovery via USB dongle (RF52840)
   - Optional Wi-Fi discovery via ESP32 companion sensor
 
 - Analysis
@@ -44,8 +44,10 @@ Illegal or unethical use is strictly discouraged.
 - Flipper Zero with latest firmware
 - SD card installed
 - Docker (recommended) or ARM GCC toolchain
-- Optional: CC2652/CC2531 Zigbee USB stick
-- Optional: ESP32 DevKit for Wi-Fi sensor mode
+- ESP32 DevKit for Wi-Fi sensor mode
+- RF52840 USB dongles
+- NRF52840 DK
+
 
 ### Build Instructions
 
