@@ -1,0 +1,52 @@
+site_name: Flipper IoT Suite
+site_url: https://JohannesLks.github.io/flipper-iot-suite
+repo_url: https://github.com/JohannesLks/flipper-iot-suite
+repo_name: JohannesLks/flipper-iot-suite
+site_description: IoT Discovery & Attack Simulation Toolkit for Flipper Zero
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  language: en
+
+plugins:
+  - search
+  - mermaid2
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/JohannesLks
+
+copyright: Copyright &copy; 2024 Johannes LKS
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - tables
+  - footnotes
+
+nav:
+  - Home: index.md
