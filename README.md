@@ -1,5 +1,7 @@
 # Flipper IoT Suite
 
+![](./data/logo.png)
+
 IoT Discovery & Attack Simulation Toolkit for Flipper Zero
 
 The Flipper IoT Suite is an out-of-tree application (`.fap`) for Flipper Zero.  
@@ -12,7 +14,7 @@ It allows security researchers and pentesters to discover, analyze, and interact
 - Discovery
   - BLE device scanning (addresses, RSSI, services, manufacturer data)
   - Sub-GHz probe (433/868 MHz signal detection & fingerprinting)
-  - Optional Zigbee discovery via USB dongle (CC2652/CC2531)
+  - Optional Zigbee discovery via USB dongle (RF52840)
   - Optional Wi-Fi discovery via ESP32 companion sensor
 
 - Analysis
@@ -44,8 +46,10 @@ Illegal or unethical use is strictly discouraged.
 - Flipper Zero with latest firmware
 - SD card installed
 - Docker (recommended) or ARM GCC toolchain
-- Optional: CC2652/CC2531 Zigbee USB stick
-- Optional: ESP32 DevKit for Wi-Fi sensor mode
+- ESP32 DevKit for Wi-Fi sensor mode
+- RF52840 USB dongles
+- NRF52840 DK
+
 
 ### Build Instructions
 
@@ -55,3 +59,27 @@ Clone the repo:
 git clone https://github.com/johanneslks/flipper-iot-suite.git
 cd flipper-iot-suite
 ```
+
+Build the FAP file:
+
+```bash
+./build.sh
+```
+
+The build script will:
+1. Clone the Flipper Zero firmware repository
+2. Set up the ARM cross-compilation toolchain
+3. Compile the IoT Suite application
+4. Generate `iot_suite.fap` file
+
+**Installation:**
+1. Copy `iot_suite.fap` to your Flipper Zero SD card under `/ext/apps/Tools/`
+2. Launch the app from the Flipper Zero menu
+
+**Requirements:**
+- Docker (for cross-compilation)
+- Git (for firmware repository)
+- Flipper Zero with SD card
+
+# resources
+https://cujo.com/blog/thread-support-for-flipper-zero-part-2-setup/

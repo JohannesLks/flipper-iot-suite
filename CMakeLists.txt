@@ -1,21 +1,24 @@
 cmake_minimum_required(VERSION 3.13)
-project(hello_fap C)
+project(iot_suite C)
 
+# Furi SDK wird vom Docker Container bereitgestellt
 if(DEFINED ENV{FURI_SDK_PATH})
   set(FURI_SDK_PATH $ENV{FURI_SDK_PATH})
+  add_subdirectory(${FURI_SDK_PATH} furi-sdk)
 else()
-  if(EXISTS "${CMAKE_SOURCE_DIR}/furi-sdk/CMakeLists.txt")
-    set(FURI_SDK_PATH "${CMAKE_SOURCE_DIR}/furi-sdk")
-  else()
-    message(FATAL_ERROR "FURI_SDK_PATH nicht gesetzt und ./furi-sdk nicht gefunden.")
-  endif()
+  # Fallback für lokale Entwicklung
+  find_package(PkgConfig REQUIRED)
+  pkg_check_modules(FURI REQUIRED furi)
 endif()
 
-add_subdirectory(${FURI_SDK_PATH} furi-sdk)
-
-add_executable(hello_fap
+add_executable(iot_suite
   src/main.c
 )
 
-target_link_libraries(hello_fap furi)
-furi_create_fap(hello_fap)
+if(DEFINED ENV{FURI_SDK_PATH})
+  target_link_libraries(iot_suite furi)
+  furi_create_fap(iot_suite)
+else()
+  target_link_libraries(iot_suite ${FURI_LIBRARIES})
+  target_include_directories(iot_suite PRIVATE ${FURI_INCLUDE_DIRS})
+endif()

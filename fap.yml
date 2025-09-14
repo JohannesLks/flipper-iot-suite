@@ -1,8 +1,8 @@
-appid: hello_fap
-name: Hello FAP
+appid: iot_suite
+name: IoT Suite
 category: Tools
 version: 0.1.0
-entry: hello_fap_app
+entry: iot_suite_app
 icon: A_Plugins
 requires:
   - gui
