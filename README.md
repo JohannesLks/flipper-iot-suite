@@ -1,3 +1,6 @@
+# Note: This Project is still in early development and not in a operational state.
+
+
 # Flipper IoT Suite
 
 ![](./data/logo.png)
