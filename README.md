@@ -14,6 +14,9 @@ It allows security researchers and pentesters to discover, analyze, and interact
 
 ## Features (Planned)
 
+###
+First expected feature will be WiFi IoT Discovery with the WiFi Development extension Board.
+
 - Discovery
   - BLE device scanning (addresses, RSSI, services, manufacturer data)
   - Sub-GHz probe (433/868 MHz signal detection & fingerprinting)
