@@ -12,7 +12,7 @@ It allows security researchers and pentesters to discover, analyze, and interact
 
 ---
 
-## Features (Planned)
+## Features (not implemented)
 
 ###
 First expected feature will be WiFi IoT Discovery with the WiFi Development extension Board.
