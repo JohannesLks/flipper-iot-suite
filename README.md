@@ -87,5 +87,7 @@ The build script will:
 - Git (for firmware repository)
 - Flipper Zero with SD card
 
+---
+
 # resources
 https://cujo.com/blog/thread-support-for-flipper-zero-part-2-setup/
